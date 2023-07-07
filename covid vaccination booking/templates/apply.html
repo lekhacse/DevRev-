@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply for Vaccination Slot</title>
+</head>
+<body>
+    <h1>Apply for Vaccination Slot</h1>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+    <form method="POST" action="/apply">
+        <select name="center">
+            {% for center in centers %}
+                <option value="{{ center.id }}">{{ center.name }}</option>
+            {% endfor %}
+        </select><br><br>
+        <input type="submit" value="Apply">
+    </form>
+</body>
+</html>
