@@ -1,0 +1,37 @@
+/* Add your custom CSS styles here */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.loading-animation {
+  display: none;
+  /* Add your loading animation styles */
+}
+
+.signup-login {
+  display: none;
+  /* Add your signup and login form styles */
+}
+
+.book-list {
+  margin-top: 20px;
+  /* Add your book list styles */
+}
+
+.search-bar {
+  margin
