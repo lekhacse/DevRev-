@@ -1,0 +1,19 @@
+<!-- my_bookings.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Bookings</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>My Bookings</h1>
+    {% for booking in bookings %}
+        <div class="booking">
+            <p>Flight Number: {{ booking.flight_number }}</p>
+            <p>Departure Time: {{ booking.departure_time }}</p>
+            <p>Arrival Time: {{ booking.arrival_time }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
