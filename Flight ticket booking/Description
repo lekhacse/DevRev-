@@ -1,0 +1,32 @@
+app.py:
+
+This file contains the main Flask application code.
+The Flask routes are defined using the @app.route decorator, which specifies the URL paths and HTTP methods that the application handles.
+The /signup route handles user registration. It receives the username and password from a form, performs data validation, generates a password hash, and saves the user to the database.
+The /login route handles user login. It receives the username and password from a form, retrieves the user from the database, and checks if the password hash matches. If successful, it sets the user in the session.
+The /logout route removes the user from the session.
+The /add_flight route allows an admin to add a flight to the database.
+The /remove_flight route allows an admin to remove a flight from the database.
+The /search route handles flight search based on date and time.
+The /flight/<flight_id> route displays flight details and handles ticket booking.
+The /my_bookings route displays the bookings made by the logged-in user.
+
+models.py:
+
+This file defines the database models using SQLAlchemy, a Python ORM (Object-Relational Mapping) library.
+The User, Flight, and Booking classes represent the respective database tables.
+Each class extends the db.Model class provided by SQLAlchemy and defines the table columns as class attributes.
+The save() method saves the object instance to the database using SQLAlchemy's session.
+
+helpers.py:
+
+This file contains helper functions used by the Flask application.
+The get_user_by_username() function retrieves a user from the database based on their username.
+The get_flight_by_id() function retrieves a flight from the database based on its ID.
+The get_bookings_by_user() function retrieves all bookings made by a specific user.
+
+config.py:
+
+This file holds configuration variables for the application, such as the secret key and the database URI.
+requirements.txt:
+This file lists the required Python dependencies for the application. You can install them using pip install -r requirements.txt.
