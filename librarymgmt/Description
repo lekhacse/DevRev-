@@ -1,5 +1,49 @@
-For JS:
+Only the front end is provided here
 
-In the provided code snippet, the books are fetched from an API endpoint represented by the URL 'api/books'. This is a placeholder URL used as an example.
+index.html:
 
-You need to replace 'api/books' with the actual URL of the API that provides the book data. The URL might look something like 'https://google.com/api/books'. 
+This is the main HTML file and serves as the entry point for your web app.
+It includes a reference to the main CSS file (styles.css) and the JavaScript file (app.js).
+You can add your main content within the <body> tag.
+
+login.html:
+
+This HTML file represents the login page for users to sign in.
+It includes a reference to the main CSS file (styles.css) and the JavaScript file (app.js).
+You can create your login form and user interface within the <body> tag.
+
+signup.html:
+
+This HTML file represents the signup page for new users to create an account.
+It includes a reference to the main CSS file (styles.css) and the JavaScript file (app.js).
+You can create your signup form and user interface within the <body> tag.
+
+book-list.html:
+
+This HTML file represents the page for displaying the list of books.
+It includes a reference to the main CSS file (styles.css) and the JavaScript file (app.js).
+You can create the layout and user interface to show the book list within the <body> tag.
+
+cart.html:
+
+This HTML file represents the page where users can view and checkout the selected books in their cart.
+It includes a reference to the main CSS file (styles.css) and the JavaScript file (app.js).
+You can create the layout and user interface to display the cart contents within the <body> tag.
+
+book-details.html:
+
+This HTML file represents the page for displaying detailed information about a specific book.
+It includes a reference to the main CSS file (styles.css) and the JavaScript file (app.js).
+You can create the layout and user interface to show the book details within the <body> tag.
+
+profile.html:
+
+This HTML file represents the user profile page where users can view and manage their account details.
+It includes a reference to the main CSS file (styles.css) and the JavaScript file (app.js).
+You can create the layout and user interface to show the user profile information within the <body> tag.
+
+error.html:
+
+This HTML file represents the page for displaying error messages or handling specific error scenarios.
+It includes a reference to the main CSS file (styles.css) and the JavaScript file (app.js).
+You can create the layout and user interface to show the error message or handle error conditions within the <body> tag.
