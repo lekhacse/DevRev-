@@ -1,0 +1,19 @@
+<!-- add_flight.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Flight</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Add Flight</h1>
+    <form action="/add_flight" method="post">
+        <input type="text" name="flight_number" placeholder="Flight Number" required>
+        <input type="text" name="departure_time" placeholder="Departure Time" required>
+        <input type="text" name="arrival_time" placeholder="Arrival Time" required>
+        <input type="number" name="seat_count" placeholder="Seat Count" required>
+        <button type="submit">Add Flight</button>
+    </form>
+</body>
+</html>
