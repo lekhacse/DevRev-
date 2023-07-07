@@ -1,0 +1,33 @@
+app.py:
+
+This file serves as the main entry point of the application.
+It initializes the Flask app and sets up the database connection.
+It registers the user and admin routes.
+It initializes the database tables.
+It runs the Flask app.
+
+models.py:
+
+This file defines the database models using SQLAlchemy.
+It includes the User and VaccinationCenter models, representing the user and vaccination center entities respectively.
+It defines the fields and relationships for each model.
+
+routes.py:
+
+This file contains the route handlers for user and admin functionality.
+It uses Flask's Blueprint feature to organize routes.
+It includes routes for user login, signup, dashboard, search, and apply functionalities.
+It includes routes for admin login, dashboard, adding vaccination centers, dosage details, and removing centers.
+
+templates/:
+
+This folder contains the HTML templates that define the structure and layout of the application's web pages.
+It includes templates for the index page, login page, signup page, dashboard page, search page, apply page, confirmation page, admin dashboard page, admin login page, add center page, and dosage details page.
+Each template contains HTML markup with placeholders for dynamic content that will be rendered by the Flask app.
+
+static/css/styles.css:
+
+This file contains the CSS styles that define the visual appearance of the HTML templates.
+It provides styling for various elements such as headings, paragraphs, forms, and page-specific sections.
+It is linked to the HTML templates to apply the defined styles.
+The code snippets provided aim to create a basic structure and functionality for a COVID vaccination booking application. They include routes for user login, signup, dashboard, search, and applying for vaccination slots, as well as routes for admin login, managing vaccination centers, and viewing dosage details.
