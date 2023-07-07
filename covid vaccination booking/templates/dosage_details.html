@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dosage Details</title>
+</head>
+<body>
+    <h1>Dosage Details</h1>
+    <!-- Display dosage details grouped by vaccination centers -->
+    {% for center in centers %}
+        <h3>{{ center.name }}</h3>
+        <p>Dosage: {{ center.dosage }}</p>
+        <!-- Add more dosage-related details -->
+    {% endfor %}
+</body>
+</html>
