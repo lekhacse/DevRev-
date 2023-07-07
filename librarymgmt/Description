@@ -1,0 +1,5 @@
+For JS:
+
+In the provided code snippet, the books are fetched from an API endpoint represented by the URL 'api/books'. This is a placeholder URL used as an example.
+
+You need to replace 'api/books' with the actual URL of the API that provides the book data. The URL might look something like 'https://google.com/api/books'. 
