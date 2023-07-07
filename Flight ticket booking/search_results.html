@@ -1,0 +1,20 @@
+<!-- search_results.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Search Results</h1>
+    {% for flight in flights %}
+        <div class="flight">
+            <p>Flight Number: {{ flight.flight_number }}</p>
+            <p>Departure Time: {{ flight.departure_time }}</p>
+            <p>Arrival Time: {{ flight.arrival_time }}</p>
+            <a href="/flight/{{ flight.id }}">Book</a>
+        </div>
+    {% endfor %}
+</body>
+</html>
